@@ -5,11 +5,11 @@
 // i - номер строки
 // j - номер столбца
 
-void ForLoopTable()
+void ForLoopTable(int max_num)
 {
-    for(int i = 1; i < 11; i++)
+    for(int i = 1; i <= max_num; i++)
     {
-        for(int j = 1; j < 11; j++)
+        for(int j = 1; j <= max_num; j++)
         {
             std::cout << std::setw(3) << i*j << " "; 
         }
@@ -17,15 +17,15 @@ void ForLoopTable()
     }
 }
 
-void WhileLoopTable()
+void WhileLoopTable(int max_num)
 {
     int i = 1;
     int j = 1;
-    while (i <= 10)
+    while (i <= max_num)
     {
         std::cout << std::setw(3) << i*j << " "; 
         ++j;
-        if (j == 11)
+        if (j > max_num)
         {
             ++i;
             j = 1;
@@ -34,7 +34,7 @@ void WhileLoopTable()
     }
 }
 
-void DoWhileLoopTable()
+void DoWhileLoopTable(int max_num)
 {
     int i = 1;
     int j = 1;
@@ -42,12 +42,12 @@ void DoWhileLoopTable()
     {
         std::cout << std::setw(3) << i*j << " "; 
         ++j;
-        if (j == 11)
+        if (j > max_num)
         {
             ++i;
             j = 1;
             std::cout << "\n";
         }     
-    } while(i < 11); 
+    } while(i <= max_num); 
 }
     

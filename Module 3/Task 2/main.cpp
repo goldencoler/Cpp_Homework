@@ -8,9 +8,9 @@
 int main()
 {
     //Сделать, чтобы каждую игру начинал разный игрок
-    int player1 = Player(false);
-    int player2 = Player(false);
+    int player1 = PlayerCounter(false);
+    int player2 = PlayerCounter(false);
     
-    Game(player1, player2);
+    Game_Initializer(player1, player2);
 
 }

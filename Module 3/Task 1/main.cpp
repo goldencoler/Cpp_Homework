@@ -17,6 +17,5 @@ int main()
     std::cout << "do-while loop function:" << "\n";
     DoWhileLoopTable();
     std::cout << "\n";
- 
 
 }
